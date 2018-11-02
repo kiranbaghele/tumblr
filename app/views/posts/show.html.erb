@@ -1,15 +1,17 @@
-<div>
-  <%= link_to :index, posts_path, class: "btn btn-success" %>
-</div>
+<div id="post_content">
+  <div>
+    <%= link_to :index, posts_path, class: "btn btn-success" %>
+  </div>
 
-<div>
-  title: <%=@post.title%>
-</div>
+  <div>
+    title: <%=@post.title%>
+  </div>
 
-<div class="date">
-  submitted: <%= time_ago_in_words(@post.created_at)%> ago
-</div>
+  <div class="date">
+    submitted: <%= time_ago_in_words(@post.created_at)%> ago
+  </div>
 
-<div>
-  body: <%=@post.body%>
+  <div>
+    body: <%=@post.body%>
+  </div>
 </div>
